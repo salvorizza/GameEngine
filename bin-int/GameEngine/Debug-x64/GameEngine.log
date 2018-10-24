@@ -1,4 +1,11 @@
-﻿  GameEngine.vcxproj -> C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.dll
+﻿  Engine.cpp
+c:\dev\gameengine\gameengine\src\core\engine.h(28): warning C4251: 'GameEngine::Engine::m_systems': class 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>' needs to have dll-interface to be used by clients of class 'GameEngine::Engine'
+  c:\dev\gameengine\gameengine\src\core\engine.h(28): note: see declaration of 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>'
+  Application.cpp
+  Generating Code...
+     Creating library C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.lib and object C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.exp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  GameEngine.vcxproj -> C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.dll
   C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.dll
   1 File copiati
   C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.lib
@@ -10,6 +17,10 @@
   C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.lib
   C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.pdb
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\GameEngine.dll
+  C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.exe
+  C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.ilk
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.pdb
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\lib\GameEngine.lib
+  C:\dev\GameEngine\bin-int\GameEngine\Debug-x64\Application.obj
+  C:\dev\GameEngine\bin-int\GameEngine\Debug-x64\Engine.obj
   C:\dev\GameEngine\bin-int\GameEngine\Debug-x64\GameEngine.log

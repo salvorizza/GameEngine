@@ -1,1 +1,3 @@
-﻿LINK : fatal error LNK1104: cannot open file 'GameEngine.lib'
+﻿  main.cpp
+c:\dev\gameengine\sandbox\src\main.cpp(3): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Sandbox.vcxproj -> C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.exe
