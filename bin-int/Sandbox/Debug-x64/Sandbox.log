@@ -1,3 +1,5 @@
-﻿  main.cpp
-c:\dev\gameengine\sandbox\src\main.cpp(3): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Sandbox.vcxproj -> C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.exe
+﻿  application.cpp
+c:\dev\gameengine\gameengine\src\core\engine.h(28): warning C4251: 'GameEngine::Engine::m_systems': class 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>' needs to have dll-interface to be used by clients of class 'GameEngine::Engine'
+  c:\dev\gameengine\gameengine\src\core\engine.h(28): note: see declaration of 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>'
+c:\dev\gameengine\sandbox\src\application.cpp(8): error C2969: syntax error: ';': expected member function definition to end with '}'
+c:\dev\gameengine\sandbox\src\application.cpp(14): fatal error C1004: unexpected end-of-file found

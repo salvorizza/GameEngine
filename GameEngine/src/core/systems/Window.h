@@ -30,6 +30,7 @@ namespace GameEngine {
 	};
 
 	class Window : public System {
+		friend class Engine;
 	private:
 		U32 m_width;
 		U32 m_height;
@@ -41,6 +42,9 @@ namespace GameEngine {
 		Window(const WindowData& window_data);
 	public:
 		~Window();
+
+		bool IsClosed() const { return glfwWindowShouldClose(m_handle); }
+
 	protected:
 		U32 Initialize() override;
 		U32 UpdateSystem(const Context& context) override;

@@ -17,18 +17,15 @@ namespace GameEngine {
 
 	};
 
-	class ENGINE_API Application : private System{
+	class ENGINE_API Application{
 		friend class Engine;
 	private:
 	public:
-		Application(const ApplicationData& application_data);
+		Application();
 		virtual ~Application();
 
 		U32 Update(const Context& context);
 		U32 Render(const Context& context);
-
-	protected:
-		U32 UpdateSystem(const Context& context) override;
 	};
 
 }

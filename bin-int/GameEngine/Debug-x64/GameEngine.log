@@ -4,7 +4,9 @@ c:\dev\gameengine\gameengine\src\core\engine.h(28): warning C4251: 'GameEngine::
   Application.cpp
   Generating Code...
      Creating library C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.lib and object C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\dev\GameEngine\bin\GameEngine\Debug-x64\vc120.pdb'; linking object as if no debug info
   GameEngine.vcxproj -> C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.dll
   C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.dll
   1 File copiati
@@ -18,7 +20,9 @@ LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; us
   C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.pdb
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\GameEngine.dll
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.exe
+  C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.exp
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.ilk
+  C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.lib
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.pdb
   C:\dev\GameEngine\bin\Sandbox\Debug-x64\lib\GameEngine.lib
   C:\dev\GameEngine\bin-int\GameEngine\Debug-x64\Application.obj

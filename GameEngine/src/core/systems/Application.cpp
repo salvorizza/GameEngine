@@ -2,23 +2,20 @@
 
 namespace GameEngine {
 
-	Application::Application(const ApplicationData & application_data)
-		: System(application_data)
-	{ }
+	Application::Application()
+	{
+	}
 
 	Application::~Application() {
 
 	}
+
 	U32 Application::Update(const Context & context)
 	{
-		return U32();
+		return 0;
 	}
 	U32 Application::Render(const Context & context)
 	{
-		return U32();
-	}
-	U32 Application::UpdateSystem(const Context & context)
-	{
-		return System::UpdateSystem(context);
+		return 0;
 	}
 }

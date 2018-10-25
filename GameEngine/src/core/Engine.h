@@ -27,9 +27,9 @@ namespace GameEngine {
 		EngineState m_engine_state;
 		Map<SystemType, System*> m_systems;
 		Application* m_pApp;
+	protected:
 	private:
-		Engine();
-		U32 Initialize();
+		U32 Initialize(Application* pApp);
 
 		void RegisterSystem(System* pSys) {
 			SystemType sys_type = pSys->GetType();
@@ -41,6 +41,7 @@ namespace GameEngine {
 			}
 		}
 	public:
+		Engine();
 		~Engine();
 
 		U32 Run(Application* pApp);
@@ -50,12 +51,12 @@ namespace GameEngine {
 			T* pSys = nullptr;
 			if (m_systems.count(type) != 0) {
 				pSys = dynamic_cast<T*>(m_systems[type]);
-				if (pSys = nullptr) {
+				if (pSys == nullptr) {
 					//Logger:::Log("[ENGINE("Failed to retrieve a system")]\n");
 					return nullptr;
 				}
 			}
-			return pSys;
+			return static_cast<T*>(pSys);
 		}
 
 	};
