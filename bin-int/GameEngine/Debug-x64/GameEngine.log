@@ -1,8 +1,11 @@
-﻿  Engine.cpp
-c:\dev\gameengine\gameengine\src\core\engine.h(28): warning C4251: 'GameEngine::Engine::m_systems': class 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>' needs to have dll-interface to be used by clients of class 'GameEngine::Engine'
-  c:\dev\gameengine\gameengine\src\core\engine.h(28): note: see declaration of 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>'
-  Application.cpp
-  Generating Code...
+﻿  matrix4.cpp
+c:\dev\gameengine\gameengine\src\core\math\matrix4.cpp(25): warning C4172: returning address of local variable or temporary: result
+c:\dev\gameengine\gameengine\src\core\math\matrix4.cpp(31): warning C4172: returning address of local variable or temporary: identity
+c:\dev\gameengine\gameengine\src\core\math\matrix4.cpp(40): warning C4172: returning address of local variable or temporary: result
+c:\dev\gameengine\gameengine\src\core\math\matrix4.cpp(79): warning C4172: returning address of local variable or temporary: result
+c:\dev\gameengine\gameengine\src\core\math\matrix4.cpp(70): warning C4172: returning address of local variable or temporary: result
+c:\dev\gameengine\gameengine\src\core\math\matrix4.cpp(96): warning C4172: returning address of local variable or temporary: result
+c:\dev\gameengine\gameengine\src\core\math\matrix4.cpp(113): warning C4172: returning address of local variable or temporary: result
      Creating library C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.lib and object C:\dev\GameEngine\bin\GameEngine\Debug-x64\GameEngine.exp
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library

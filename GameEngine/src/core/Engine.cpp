@@ -17,9 +17,11 @@ namespace GameEngine {
 	{
 		m_engine_state = EngineState::INITIALIZING;
 
-		/*Here we register all the systems we need*/
+		/*Here we register all the systems we need N.B(THE ORDER IS IMPORTANT)*/
+		RegisterSystem(pApp);
 		RegisterSystem(new Window({ 640,480, "GameEngine-OpenGL", false,false }));
 
+		//We Initialize all of them
 		for (auto e : m_systems) {
 			if (e.second->Initialize() != 0) {
 				//Logger::Log("[ENGINE]("Failed to initialize a system")\n");
@@ -37,27 +39,22 @@ namespace GameEngine {
 		if (Initialize(pApp) != 0) {
 			return -1;
 		}
-		/*m_pApp =pApp;
-		if (m_pApp->Initialize() != 0){
-			return -1;
-		}*/
-		m_engine_state = EngineState::RUNNING;
-		Window* pWin = GetSystem<Window>(SystemType::WINDOW);
-		if (pWin == nullptr) {
+
+		if (pApp->Setup() != 0){
 			return -1;
 		}
-		Context context = { 1,pWin };
-		while (!pWin->IsClosed()) {
 
-			pApp->Update(context);
-
-			pApp->Render(context);
-
+		m_engine_state = EngineState::RUNNING;
+		Context context = {};
+		while (true) {
 			for (auto e : m_systems) {
 				if (e.second->UpdateSystem(context) != 0) {
 					//Logger::Log("[ENGINE]("Failed to initialize a system")\n");
 					return -1;
 				}
+			}
+			if (context.pWin == nullptr || context.pWin->IsClosed()) {
+				break;
 			}
 		}
 		return 0;

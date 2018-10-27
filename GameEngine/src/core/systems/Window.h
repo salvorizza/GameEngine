@@ -47,7 +47,7 @@ namespace GameEngine {
 
 	protected:
 		U32 Initialize() override;
-		U32 UpdateSystem(const Context& context) override;
+		U32 UpdateSystem(Context& context) override;
 	};
 
 }

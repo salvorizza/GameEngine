@@ -14,6 +14,12 @@
     <ClInclude Include="src\core\data_structures\array.h" />
     <ClInclude Include="src\core\data_structures\map.h" />
     <ClInclude Include="src\core\Engine.h" />
+    <ClInclude Include="src\core\graphics\base\RenderContext.h" />
+    <ClInclude Include="src\core\graphics\opengl\GLRenderContext.h" />
+    <ClInclude Include="src\core\math\matrix3.h" />
+    <ClInclude Include="src\core\math\matrix4.h" />
+    <ClInclude Include="src\core\math\vector2.h" />
+    <ClInclude Include="src\core\math\vector3.h" />
     <ClInclude Include="src\core\platform\platform.h" />
     <ClInclude Include="src\core\systems\Application.h" />
     <ClInclude Include="src\core\systems\base\System.h" />
@@ -26,6 +32,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\core\Engine.cpp" />
+    <ClCompile Include="src\core\math\matrix4.cpp" />
+    <ClCompile Include="src\core\math\vector2.cpp" />
+    <ClCompile Include="src\core\math\vector3.cpp" />
     <ClCompile Include="src\core\systems\Application.cpp" />
     <ClCompile Include="src\core\systems\base\System.cpp" />
     <ClCompile Include="src\core\systems\Window.cpp" />

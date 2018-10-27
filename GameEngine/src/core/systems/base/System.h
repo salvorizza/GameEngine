@@ -34,7 +34,7 @@ namespace GameEngine {
 
 	protected:
 		virtual U32 Initialize() { return 0; }
-		virtual U32 UpdateSystem(const Context& context) { return 0; }
+		virtual U32 UpdateSystem(Context& context) { return 0; }
 
 		SystemType GetType() const { return m_type; }
 	};

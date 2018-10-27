@@ -26,7 +26,6 @@ namespace GameEngine {
 	private:
 		EngineState m_engine_state;
 		Map<SystemType, System*> m_systems;
-		Application* m_pApp;
 	protected:
 	private:
 		U32 Initialize(Application* pApp);

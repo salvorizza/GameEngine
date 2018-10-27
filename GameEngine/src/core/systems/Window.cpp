@@ -63,8 +63,11 @@ namespace GameEngine {
 		return System::Initialize();
 	}
 
-	U32 Window::UpdateSystem(const Context & context)
+	U32 Window::UpdateSystem(Context& context)
 	{
+		if (context.pWin == nullptr) {
+			context.pWin = this;
+		}
 		glfwPollEvents();
 		glfwSwapBuffers(m_handle);
 		return System::UpdateSystem(context);
