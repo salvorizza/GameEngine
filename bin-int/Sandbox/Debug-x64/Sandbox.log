@@ -1,5 +1,0 @@
-﻿  application.cpp
-c:\dev\gameengine\gameengine\src\core\engine.h(28): warning C4251: 'GameEngine::Engine::m_systems': class 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>' needs to have dll-interface to be used by clients of class 'GameEngine::Engine'
-  c:\dev\gameengine\gameengine\src\core\engine.h(28): note: see declaration of 'GameEngine::Map<GameEngine::SystemType,GameEngine::System *>'
-     Creating library C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.lib and object C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.exp
-  Sandbox.vcxproj -> C:\dev\GameEngine\bin\Sandbox\Debug-x64\Sandbox.exe
